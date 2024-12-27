@@ -1,0 +1,205 @@
+.mainWrap {
+    width: 100%;
+    height: 100vh;
+
+    .detailWrap {
+        width: calc(100% - 30%);
+        margin: 0 auto;
+        background: #fff;
+        height: 93%;
+        .todoList {
+            width: 100%;
+        }
+        .detailInner {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            width: 100%;
+        }
+            .imgUpload {
+                position: relative;
+                width: 100%;
+                .ImgSpaceInput {
+                    width: 100%;
+                    height: 311px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    background-image: url(../../images/imgSpace.png); 
+                }
+                .ImgSpace {
+                    display: block;
+                    width: 384px;
+                    height: 311px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                .addImgBtn {
+                    background-image: url(../../images/addImg.png);
+                    width: 64px;
+                    height: 64px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border: none;
+                    border-radius: 100px;
+                    position: absolute;
+                    top: 25%;
+                    right: 10px;
+                    cursor: pointer;
+                }
+                .ModifyAddImg {
+                    background-image: url(../../images/uploadImgModify.png);
+                    width: 64px;
+                    height: 64px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border: none;
+                    border-radius: 100px;
+                    position: absolute;
+                    top: 25%;
+                    right: 10px;
+                    cursor: pointer;
+                }
+            }
+            .txtMemo {
+                width: 100%;
+                .memoImg {
+                    background-image: url(../../images/memo.png);
+                    
+                    width: 100%;
+                    height: 311px;
+                    background-size: contain;
+                    background-size: cover;
+                    border-radius: 24px;
+                    .memoTitle {
+                        color: #92400E;
+                        font-size: 16px;
+                        text-align: center;
+                        padding-top: 25px;
+                    }
+                    .txtInput {
+                        background: none;
+                        border: none;
+                        width: 384px;
+                    }
+                }
+                .moFixBtn {
+                    margin-top: 40px;
+                    gap: 16px;
+                    justify-content: end;
+                    display: flex;
+                    .FixedBtn , .modifyBtn {
+                        width: 164px;
+                        height: 52px;
+                        border-radius: 24px;
+                        box-shadow: 3px 3px 5px #000;
+                    }
+                    .FixedBtn {
+                        background: #E2E8F0;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+                    .modifyBtn {
+                        background: #F43F5E;
+                        color: #fff;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+                  }
+            }
+        }
+}
+
+
+
+@media (max-width: 744px) {
+    .mainWrap .detailWrap {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+            flex-direction: column; 
+            align-items: center; 
+    }
+    .mainWrap .detailWrap .imgUpload {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .mainWrap .detailWrap .imgUpload .ImgSpaceInput {
+        background-image: url(../../images/744ImgUp.png);
+        width: 100%;
+        margin: 0 auto;
+        height: 311px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mainWrap .detailWrap .imgUpload .ImgSpace {
+        width: 100%;
+        margin: 0 auto;
+        height: 311px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .mainWrap .detailWrap .txtMemo {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .mainWrap .detailWrap .txtMemo .memoImg {
+        background-image: url(../../images/744Text.png);
+        width: 100%;
+        height: 311px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mainWrap .detailWrap .txtMemo .moFixBtn {
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .mainWrap .detailWrap .imgUpload .addImgBtn {
+        position: absolute;
+        top: 70%;
+    }
+}
+
+@media (max-width: 375px) {
+    .mainWrap .detailWrap {
+        overflow-x: hidden;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        height: auto;
+    }
+    .mainWrap .detailWrap .imgUpload {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .mainWrap .detailWrap .imgUpload .ImgSpaceInput {
+        background-image: url(../../images/375ImgUp.png);
+        width: 100%;
+        margin: 0 auto;
+        height: 311px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mainWrap .detailWrap .txtMemo {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .mainWrap .detailWrap .txtMemo .memoImg {
+        background-image: url(../../images/375Text.png);
+        width: 100%;
+        height: 311px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .mainWrap .detailWrap .txtMemo .moFixBtn {
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .mainWrap .detailWrap .imgUpload .addImgBtn {
+        position: absolute;
+        top: 70%;
+    }
+}

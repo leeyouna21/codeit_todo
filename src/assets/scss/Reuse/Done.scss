@@ -1,0 +1,23 @@
+.todoListOK {
+    background: #EDE9FE;
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: 2px solid #000;
+    margin-bottom: 16px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    .checkBoxCheck {
+        background-image: url(../../images/checkOK.png);
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+}

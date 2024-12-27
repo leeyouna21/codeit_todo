@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.mainWrap {
+    width: 100%;
+    height: 100vh;
+    background: #F9FAFB;
+    .mainInnerBox {
+        width: calc(100% - 30%);
+        margin: 0 auto;
+        .addWrap {
+            margin-top: 24px;
+            width: 100%;
+            display: flex;
+            height: 36px;
+            .addTodo {
+                width: 100%;
+                border-radius: 100px;
+                border: 3px solid #000;
+                height: 36px;
+                box-shadow: 3px 7px 5px #000;
+            }
+            .addBtn {
+                width: 168px;
+                height: 36px;
+                border-radius: 24px;
+                box-shadow: 3px 7px 5px #000;
+                margin-left: 16px;
+                cursor: pointer;
+            }
+        }
+        .listWrap {
+            width: 100%;
+            display: flex;
+            // height: 80vh;
+            margin-top: 40px;
+            .TodoWrap {
+                width: 50%;
+                // height: 80vh;
+                .todoTitle {
+                    font-size: 18px;
+                    width: 101px;
+                    height: 36px;
+                    border-radius: 50px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #BEF264; 
+                    color: #15803D; 
+                    margin-bottom: 16px;
+                    font-weight: bold;
+                }
+                .ifNotTodo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;  /* 수평 가운데 정렬 */
+                    justify-content: center;  /* 수직 가운데 정렬 */
+                    text-align: center;
+                    .inNotTodoImg {
+                        background-image: url(../../images/notTodo.png);
+                        width: 200px;
+                        height: 200px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    .inNotTodotxt {
+                        color: #94A3B8;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+            }
+            .DoneWrap {
+                width: 50%;
+                // height: 80vh;
+                .doneTitle {
+                    font-size: 18px;
+                    width: 101px;
+                    height: 36px;
+                    border-radius: 50px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #15803D; 
+                    color: #FCD34D; 
+                    margin-bottom: 16px;
+                    font-weight: bold;
+                }
+                .ifNotDone {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;  /* 수평 가운데 정렬 */
+                    justify-content: center;  /* 수직 가운데 정렬 */
+                    text-align: center;
+                    .inNotDoneImg {
+                        background-image: url(../../images/notDone.png);
+                        width: 200px;
+                        height: 200px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    .inNotDonetxt {
+                        color: #94A3B8;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 744px) {
+    .mainWrap .mainInnerBox, .listWrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .mainWrap .mainInnerBox .listWrap .TodoWrap {
+        width: 100%;
+    }
+    .mainWrap .mainInnerBox .listWrap .DoneWrap {
+        width: 100%;
+    }
+    .mainInnerBox {
+        width: 100%; 
+        .addWrap {
+            width: 100%;
+        }
+        .addTodo, .addBtn {
+            width: 100%; 
+        }
+        .listWrap {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            .TodoWrap, .DoneWrap {
+                width: 80%;  
+                margin-bottom: 20px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .mainWrap .mainInnerBox .addWrap .addBtn {
+        width: 56px;
+        height: 46px;
+        background: #7C3AED;
+        text-indent: -9999px;  /* 버튼 내 텍스트를 화면 밖으로 밀어 숨깁니다 */
+        padding: 0; 
+        border-radius: 24px;
+    }
+}
